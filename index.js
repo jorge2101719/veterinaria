@@ -10,14 +10,6 @@ const [option, nombre, edad, tipo, color, enfermedad] = argumentos;
 
 
 const main = async() => {
-    // if(option === 'registrar') {
-        // await registrar(nombre, edad, tipo, color, enfermedad);
-    // };
-
-    // if(option === 'leer') {
-        // await leer();
-    // };
-
     switch(option) {
         case 'registrar':
             await registrar(nombre, edad, tipo, color, enfermedad);
@@ -25,7 +17,7 @@ const main = async() => {
         case 'leer':
             await leer();
             break;
-        default: console.log(`La opción ${option} no es correcta`)
+        default: console.log(`La opción ${option} no es correcta. Inténtelo otra vez.`)
     }
 };
 

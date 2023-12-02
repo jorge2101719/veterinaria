@@ -52,6 +52,6 @@ const leer = async () => {
     };
 };
 
-// Exportamos las dos funciones anteriores
+// Exportamos las dos últimas funciones
 
 export { registrar, leer }
