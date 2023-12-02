@@ -49,7 +49,11 @@ const leer = async () => {
         console.log('No hay citas hasta el momento...', citas);
     } else {
         citas.forEach((cita, index) => {
-            console.log(`+++ Cita ${index +1} +++ Nombre: ${cita.nombre} ++ Edad: ${cita.edad} ++ Tipo: ${cita.tipo} ++ Color: ${cita.color} ++ Enfermedad: ${cita.enfermedad} \n`);
+            console.log('++++++++++++++++++++++++++++++++++++++++++++++++');
+            console.log(`+                     Cita ${index +1}                   +`);
+            console.log('++++++++++++++++++++++++++++++++++++++++++++++++')
+            console.log(`---Nombre: ${cita.nombre} \n---Edad: ${cita.edad} \n---Tipo: ${cita.tipo} \n---Color: ${cita.color} \n---Enfermedad: ${cita.enfermedad}`);
+            console.log('------------------- Fin Cita -------------------\n');
         });
     };
 };
