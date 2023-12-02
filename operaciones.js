@@ -39,16 +39,18 @@ const registrar = async (nombre, edad, tipo, color, enfermedad) => {
     const citas = await leerCitas();
     citas.push({ nombre, edad, tipo, color, enfermedad });
     await anotarCitas(citas);
-    console.log('cita registrada');
+    console.log('Cita registrada');
 };
 
 const leer = async () => {
     const citas = await leerCitas();
     // Comprobamos si el arreglo citas, está o no vacío
     if(citas.length == 0) {
-        console.log('no hay citas hasta el momento', citas);
+        console.log('No hay citas hasta el momento...', citas);
     } else {
-        console.log(citas)
+        citas.forEach((cita, index) => {
+            console.log(`+++ Cita ${index +1} +++ Nombre: ${cita.nombre} ++ Edad: ${cita.edad} ++ Tipo: ${cita.tipo} ++ Color: ${cita.color} ++ Enfermedad: ${cita.enfermedad} \n`);
+        });
     };
 };
 
